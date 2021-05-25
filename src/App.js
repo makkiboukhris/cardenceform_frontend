@@ -86,6 +86,7 @@ function App() {
         setToken(res.data.token);
         localStorage.setItem("token", res.data.token);
       } catch (error) {
+        console.log('error',error)
       }
     }
   };
